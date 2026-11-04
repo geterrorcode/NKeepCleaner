@@ -56,7 +56,7 @@ public:
 
     static util::nstring format(const Record& record) // This method returns a string from a record.
     {
-        tm t = {};
+        tm t;
         bool useUtcTime = false;
         (useUtcTime ? util::gmtime_s : util::localtime_s)(&t, &record.getTime().time);
 

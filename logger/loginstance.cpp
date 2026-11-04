@@ -6,7 +6,7 @@
 #include <QApplication>
 #include <QDateTime>
 #include <QDebug>
-
+#include <Windows.h>
 
 
 LogInstance::LogInstance(QObject *parent)
@@ -40,8 +40,19 @@ void LogInstance::Initialize()
     QString FolderPath = dir.absoluteFilePath(FolderName);
     QString logPath = FolderPath + QDir::separator() + "N-KeepCleaner.log";
     logPath = QDir::toNativeSeparators(logPath);
-    _gLogger->Init(LOG_LEVEL_INFO, reinterpret_cast<const wchar_t*>(logPath.utf16()));
-    //_gLogger->Init(LOG_LEVEL_INFO, logPath.toStdWString().c_str());
+
+    try
+    {//reinterpret_cast<const wchar_t*>(logPath.utf16())
+        _gLogger->Init(LOG_LEVEL_INFO, reinterpret_cast<const wchar_t*>(logPath.utf16()));
+        //_gLogger->Init(LOG_LEVEL_INFO, logPath.toStdWString().c_str());
+    }
+    catch (const std::exception& e)
+    {
+        int errorCode = GetLastError();
+        qDebug() << "Exception caught: " << e.what() << ", Error code: " << errorCode;
+    }
+
+    
 
 
 

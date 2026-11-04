@@ -1,0 +1,8 @@
+#pragma once
+
+enum DOWNLOAD_ERROR
+{
+    ERROR_METAFILE = 10000,
+    ERROR_DOWNLOAD = 10001,
+    ERROR_FILECOPY = 10002 
+};

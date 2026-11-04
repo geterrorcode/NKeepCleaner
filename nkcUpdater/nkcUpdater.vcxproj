@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="realese_nonuac|x64">
+      <Configuration>realese_nonuac</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5419B967-1040-453F-A5C4-D9A20E2CA329}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;network;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>N-KeepCleaneup</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <TargetName>N-KeepCleanerRun</TargetName>
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">
+    <TargetName>N-KeepCleanerRun</TargetName>
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)logger;$(ProjectDir)Depends;$(SolutionDir)Depends\CryptoPP\include;$(SolutionDir)Depends\OpenSSL\include;$(ProjectDir)Depends\QUX\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;UNICODE;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Depends\OpenSSL\lib\$(PlatformTarget)\$(Configuration);$(SolutionDir)Depends\CryptoPP\lib\\$(PlatformTarget)\$(Configuration);$(SolutionDir)nkcUpdater\Depends\QUX\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libssl64MDd.lib;cryptlibd.lib;QUXd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Depends\OpenSSL\lib\$(PlatformTarget)\$(Configuration);$(SolutionDir)Depends\CryptoPP\lib\\$(PlatformTarget)\$(Configuration);$(SolutionDir)nkcUpdater\Depends\QUX\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libssl64MD.lib;cryptlib.lib;QUX.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <ProgramDatabaseFile>$(SolutionDir)Symbol\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)logger;$(ProjectDir)Depends;$(SolutionDir)Depends\CryptoPP\include;$(SolutionDir)Depends\OpenSSL\include;$(ProjectDir)Depends\QUX\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Depends\OpenSSL\lib\$(PlatformTarget)\$(Configuration);$(SolutionDir)Depends\CryptoPP\lib\\$(PlatformTarget)\$(Configuration);$(SolutionDir)nkcUpdater\Depends\QUX\lib\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libssl64MD.lib;cryptlib.lib;QUX.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <ProgramDatabaseFile>$(SolutionDir)Symbol\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)logger;$(ProjectDir)Depends;$(SolutionDir)Depends\CryptoPP\include;$(SolutionDir)Depends\OpenSSL\include;$(ProjectDir)Depends\QUX\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\logger\Logger.cpp" />
+    <ClCompile Include="Component\alertpopup.cpp" />
+    <ClCompile Include="Component\button.cpp" />
+    <ClCompile Include="Component\commonlabel.cpp" />
+    <ClCompile Include="Component\containerlayout.cpp" />
+    <ClCompile Include="Component\customlabel.cpp" />
+    <ClCompile Include="Component\hlayout.cpp" />
+    <ClCompile Include="Component\vlayout.cpp" />
+    <ClCompile Include="Container\downloadcontainer.cpp" />
+    <ClCompile Include="define\ssdefins.cpp" />
+    <ClCompile Include="downloader\client.cpp" />
+    <ClCompile Include="downloader\downloader.cpp" />
+    <ClCompile Include="Network\apirequest.cpp" />
+    <ClCompile Include="Network\loader.cpp" />
+    <ClCompile Include="Network\loadsync.cpp" />
+    <ClCompile Include="Network\networkimagecache.cpp" />
+    <ClCompile Include="Network\networkmanager.cpp" />
+    <ClCompile Include="Network\request.cpp" />
+    <ClCompile Include="SingleApplication\include\qtlocalpeer.cpp" />
+    <ClCompile Include="SingleApplication\include\qtsingleapplication.cpp" />
+    <ClCompile Include="Tool\downdata.cpp" />
+    <ClCompile Include="Tool\drawshadow.cpp" />
+    <ClCompile Include="Tool\filecopyer.cpp" />
+    <ClCompile Include="Tool\getroundedrectregion.cpp" />
+    <ClCompile Include="Tool\qss.cpp" />
+    <ClCompile Include="Tool\utils.cpp" />
+    <ClCompile Include="ui.cpp" />
+    <QtRcc Include="nkcupdater.qrc" />
+    <QtUic Include="nkcupdater.ui" />
+    <QtMoc Include="nkcupdater.h" />
+    <ClCompile Include="nkcupdater.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SingleApplication\include\qtlocalpeer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SingleApplication\include\qtsingleapplication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="downloader\client.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="downloader\downloader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Tool\downdata.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Container\downloadcontainer.h" />
+    <QtMoc Include="Component\button.h" />
+    <QtMoc Include="Component\containerlayout.h" />
+    <QtMoc Include="Component\customlabel.h" />
+    <QtMoc Include="Component\hlayout.h" />
+    <QtMoc Include="Component\vlayout.h" />
+    <QtMoc Include="Component\commonlabel.h" />
+    <QtMoc Include="Component\alertpopup.h" />
+    <ClInclude Include="..\logger\Logger.h" />
+    <ClInclude Include="define\defineproperty.h" />
+    <ClInclude Include="define\errordefine.h" />
+    <ClInclude Include="define\moduledefine.h" />
+    <ClInclude Include="define\ssdefins.h" />
+    <ClInclude Include="Network\apirequest.h" />
+    <ClInclude Include="Network\loadsync.h" />
+    <ClInclude Include="Network\request.h" />
+    <ClInclude Include="Tool\utils.h" />
+    <ClInclude Include="ui.h" />
+    <QtMoc Include="Network\networkmanager.h" />
+    <QtMoc Include="Network\networkimagecache.h" />
+    <QtMoc Include="Network\loader.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Tool\drawshadow.h" />
+    <ClInclude Include="Tool\getroundedrectregion.h" />
+    <ClInclude Include="Tool\qss.h" />
+    <QtMoc Include="Tool\filecopyer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nkcUpdater.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

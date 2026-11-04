@@ -1,0 +1,285 @@
+$widget
+QWidget { font-family: %1; }
+
+$imageWidget
+QWidget { border-image: url(%1); }
+
+$colorWidget
+QWidget { background-color: %1; }
+
+$colorRadiusWidget
+QWidget { background-color: %1; border-radius: %2px; }
+
+$imageButton
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:hover { border-image: url(%2); }
+QAbstractButton:pressed { border-image: url(%3); }
+
+$imageButtonDisableable
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:hover { border-image: url(%2); }
+QAbstractButton:pressed { border-image: url(%3); }
+QAbstractButton:disabled { border-image: url(%4); }
+
+$imageToggleButton
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:hover { border-image: url(%2); }
+QAbstractButton:pressed { border-image: url(%3); }
+QAbstractButton:checked { border-image: url(%4); }
+QAbstractButton:checked:hover { border-image: url(%5); }
+QAbstractButton:checked:pressed { border-image: url(%6); }
+
+$imageRadioButton
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:hover { border-image: url(%2); }
+QAbstractButton:pressed { border-image: url(%3); }
+QAbstractButton:checked { border-image: url(%4); }
+
+$radioButton
+QRadioButton { padding-left: 2px; border: none; background: transparent; font: normal normal 12px; color: #666666; }
+QRadioButton:hover { color: #333333; }
+QRadioButton:pressed { color: #999999; }
+QRadioButton::indicator {width:15px; height:15px; }
+QRadioButton::indicator:unchecked { image: url(:/images/icon-radio-uncheck-w-nor.png); }
+QRadioButton::indicator:unchecked:hover { image: url(:/images/icon-radio-uncheck-w-hover.png); }
+QRadioButton::indicator:unchecked:pressed { image: url(:/images/icon-radio-uncheck-w-press.png); }
+QRadioButton::indicator:checked { image: url(:/images/icon-radio-checked-w-nor.png); }
+QRadioButton::indicator:checked:hover { image: url(:/images/icon-radio-checked-w-hover.png); }
+QRadioButton::indicator:checked:pressed { image: url(:/images/icon-radio-checked-w-press.png); }
+
+$checkBox
+QCheckBox { padding-left: 2px; border: none; background: transparent; font: normal normal 12px; color: #999999; }
+QCheckBox:hover { color: #777777; }
+QCheckBox:pressed { color: #999999; }
+QCheckBox:disabled { color: #444444; }
+QCheckBox::indicator {width:15px; height:15px; }
+QCheckBox::indicator:unchecked { image: url(:Common/images/Common/bt_selectbox.png); }
+QCheckBox::indicator:unchecked:hover { image: url(:Common/images/Common/bt_selectbox_over.png); }
+QCheckBox::indicator:unchecked:pressed { image: url(:Common/images/Common/bt_selectbox_press.png); }
+QCheckBox::indicator:checked { image: url(:Common/images/Common/bt_selectbox_select.png); }
+QCheckBox::indicator:checked:hover { image: url(:Common/images/Common/bt_selectbox_select_over.png); }
+QCheckBox::indicator:checked:pressed { image: url(:Common/images/Common/bt_selectbox_select_press.png); }
+
+$label
+QLabel { padding-bottom: 1px; background-color: transparent; color: %2; font: normal normal %1; }
+
+$boldLabel
+QLabel { padding-bottom: 1px; background-color: transparent; color: %2; font: bold normal %1; }
+
+$scrollArea
+QScrollArea { border: none; background-color: transparent; }
+QScrollBar:vertical { padding-top: 6px; padding-bottom: 6px; width: 20px; border: none; background-color: transparent; }
+QScrollBar::handle:vertical { margin-left: 7px; margin-right: 7px; background-color: rgba(0, 0, 0, 15%); border-radius: 3px; }
+QScrollBar::handle:hover { background-color: rgba(0, 0, 0, 15%); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { border: none; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { border: none; height: 0px; }
+
+$tabMenuLeftButton
+QAbstractButton { padding-top: 8px; padding-right: 1px; background-color: #f7f7f7; border: 1px solid #d9d9d9; border-right: none; color: #666666; font: normal normal 12px; text-align: top center; }				
+QAbstractButton:hover { color: #333333; }
+QAbstractButton:checked { padding-top: 7px; padding-right: 0px; background-color: #ffffff; border-top: 2px solid #f0562d; border-right: 1px solid #d9d9d9; border-bottom: none; color: #333333; }
+
+$tabMenuRightButton	
+QAbstractButton { padding-top: 8px; padding-left: 1px; background-color: #f7f7f7; border: 1px solid #d9d9d9; border-left: none; color: #666666; font: normal normal 12px; text-align: top center; }				
+QAbstractButton:hover { color: #333333; }
+QAbstractButton:checked { padding-top: 7px; padding-left: 0px; background-color: #ffffff; border-top: 2px solid #f0562d; border-left: 1px solid #d9d9d9; border-bottom: none; color: #333333; }		
+
+$modalOkButton
+QAbstractButton { padding-left: 20px; padding-right: 20px; background-color: #ff5000; border: none; border-radius: 4px; color: #ffffff; font: bold normal 13px; }
+QAbstractButton:hover { background-color: #d94400; }
+QAbstractButton:pressed { background-color: #f96d2d; color: #fcc4ab; }
+
+$modalCancelButton
+QAbstractButton { padding-left: 19px; padding-right: 19px; background-color: #ffffff; border: 1px solid #cccccc; border-radius: 4px; color: #666666; font: bold normal 13px; }
+QAbstractButton:hover { background-color: #f5f5f5; border-color: #c4c4c4; }
+QAbstractButton:pressed { background-color: #f5f5f5; border-color: #cccccc; color: #9f9f9f; }
+
+$listButton
+QAbstractButton { padding-right: 20px; padding-left: 20px; background-color: #ffffff; border: 1px solid #cccccc; border-radius: 4px; color: #666666; font: bold normal 13px; }
+QAbstractButton:hover { background-color: #f5f5f5; border-color: #c4c4c4; }
+QAbstractButton:pressed { background-color: #f5f5f5; border-color: #cccccc; color: #9f9f9f; }
+
+$popupMenuButton
+QAbstractButton { padding-left: 14px; background-color: #ffffff; border: none; color: #666666; font: normal normal 12px; text-align: center left; }
+QAbstractButton:hover { background-color: #efefef; color: #333333; font: bold normal 12px; }
+QAbstractButton:pressed { background-color: #f9f9f9; color: #a9a9a9; font: bold normal 12px; }
+QAbstractButton:disabled { background-color: #f9f9f9; color: #a9a9a9; font: normal normal 12px; }
+
+$presencePopupMenuButton
+QAbstractButton { padding-left: 29px; background-color: #ffffff; border: none; color: #666666; font: normal normal 12px; text-align: center left; }
+QAbstractButton:hover { background-color: #efefef; color: #333333; font: bold normal 12px; }
+QAbstractButton:pressed { background-color: #f9f9f9; color: #a9a9a9; font: bold normal 12px; }
+QAbstractButton:disabled { background-color: #f9f9f9; color: #a9a9a9; font: normal normal 12px; }
+
+$profileCardLeftButton
+QAbstractButton { background-color: #f7f7f7; border-top: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; border-bottom-left-radius: 5px; color: #333333; font: bold normal 14px; }
+QAbstractButton:hover { background-color: #fdfdfd; }
+QAbstractButton:pressed { background-color: #efefef; color: #aaaaaa; font: normal normal 14px; }
+QAbstractButton:disabled { background-color: #efefef; color: #aaaaaa; font: bold normal 14px; }
+
+$profileCardButton
+QAbstractButton { background-color: #f7f7f7; border-top: 1px solid #d9d9d9; border-right: 1px solid #d9d9d9; color: #333333; font: bold normal 14px; }
+QAbstractButton:hover { background-color: #fdfdfd; }
+QAbstractButton:pressed { background-color: #efefef; color: #aaaaaa; font: normal normal 14px; }
+QAbstractButton:disabled { background-color: #efefef; color: #aaaaaa; font: bold normal 14px; }
+
+$profileCardRightButton
+QAbstractButton { background-color: #f7f7f7; border-top: 1px solid #d9d9d9; border-bottom-right-radius: 5px; color: #333333; font: bold normal 14px; }
+QAbstractButton:hover { background-color: #fdfdfd; }
+QAbstractButton:pressed { background-color: #efefef; color: #aaaaaa; font: normal normal 14px; }
+QAbstractButton:disabled { background-color: #efefef; color: #aaaaaa; font: bold normal 14px; }
+
+$profileImageUploadButton
+QAbstractButton { padding-right: 12px; padding-left: 12px; background-color: #ffffff; border: 1px solid #cccccc; border-radius: 4px; color: #666666; font: normal normal 13px; }
+QAbstractButton:hover { background-color: #f5f5f5; border-color: #c4c4c4; }
+QAbstractButton:pressed { background-color: #f5f5f5; border-color: #cccccc; color: #9f9f9f; }
+
+$friendItemGameButton
+QAbstractButton { padding-left: 10px; padding-right: 2px; background-color: #ffffff;
+                  background-image: url(:/images/icon-play.png); background-repeat: no-repeat; background-position: center right; background-origin: content;
+                  border: 1px solid #cccccc; border-radius: 11px; color: #666666; font: normal normal 11px; text-align: center left; }		
+
+$roomItemAttendeeCountLabel
+QLabel { padding-right: 2px; padding-left: 2px; background-color: #f6f6f6; border: 1px solid #d9d9d9; border-radius: 2px; color: #999999; font: normal normal 11px; }
+
+$roomItemUnreadCountLabel
+QLabel { padding-right: 2px; padding-left: 2px; padding-bottom: 1px; background-color: #ff5000; border-radius: 8px; color: #ffffff; font: normal normal 11px "Tahoma"; }
+
+$friendSearchItemButton
+QAbstractButton { padding-left: 12px; padding-right: 12px; background-color: #ffffff; border:1px solid #cccccc; border-radius: 12px; color: #666666; font: normal normal 11px; }
+QAbstractButton:hover { background-color: #f5f5f5; border-color:#c4c4c4; }
+QAbstractButton:pressed { color: #9f9f9f; }
+
+$chatMessagesScrollArea
+QScrollArea { border: none; background-color: transparent; }
+QScrollBar:vertical { padding-top: 8px; padding-bottom: 8px; width: 20px; border:none; background-color: transparent; }
+QScrollBar::handle:vertical { margin-left: 7px; margin-right: 7px; background-color: rgba(0, 0, 0, 15%); border-radius: 3px; }
+QScrollBar::handle:hover { background-color: rgba(0, 0, 0, 30%); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:verztical { border: none; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { border: none; height: 0px; }
+
+$chatOpacitySlider
+QSlider::groove:horizontal { height: 2px; background: #069fee; }
+QSlider::handle:horizontal { background-image: url(:/images/opacity-control-nor.png); width: 14px; height: 14px; margin: -6px 0px; }
+QSlider::handle:hover { background-image: url(:/images/opacity-control-hover.png); }
+QSlider::handle:pressed { background-image: url(:/images/opacity-control-press.png); }
+
+$chatInputTextEdit
+QPlainTextEdit { border: none; background-color: transparent; font: normal normal 12px; }
+QScrollBar:vertical { width: 16px; border:none; background-color: transparent; }
+QScrollBar::handle:vertical { margin-left: 10px; background-color: rgba(0, 0, 0, 15%); border-radius: 3px; }
+QScrollBar::handle:hover { background-color: rgba(0, 0, 0, 30%); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:verztical { border: none; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { border: none; height: 0px; }
+
+$chatInputSendButton
+QAbstractButton { background-color: #ff5000; border: 1px solid #eb5229; border-radius: 4px; color: #ffffff; font: bold normal 13px; }
+QAbstractButton:hover { background-color: #d94400; }
+QAbstractButton:pressed { background-color: #f96d2d; }
+QAbstractButton:disabled { background-color: #efefef; border-color: #cccccc; color: #aaaaaa; }
+
+$chatEmojiGroupButton
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:checked { border-image: url(%2); background-color: #808080; border-radius: 3px; }
+
+$chatEmojiButton
+QAbstractButton { border-image: url(%1); }
+QAbstractButton:checked { background-color: #d8d8d8; border-radius: 3px; }
+
+$chatEmojiScrollArea
+QScrollArea { border: none; background-color: transparent; }
+QScrollBar:vertical { padding-top: 3px; padding-bottom: 3px; width: 17px; border: none; background-color: transparent; }
+QScrollBar::handle:vertical { margin-left: 5px; margin-right: 5px; background-color: rgba(153, 153, 153, 60%); border-radius: 3px; }
+QScrollBar::handle:hover { background-color: rgba(153, 153, 153, 60%); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { border: none; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { border: none; height: 0px; }
+
+$messageTextLabel
+QLabel { padding: 9px 10px; border-radius: 10px; background-color: #ffffff; color: #333333; font: normal normal 12px; }
+
+$messageTextLabelHead
+QLabel { padding: 9px 10px; border-radius: 10px; border-top-left-radius: 0px; background-color: #ffffff; color: #333333; font: normal normal 12px; }
+
+$myMessageTextLabel
+QLabel { padding: 9px 10px; border-radius: 10px; background-color: #ffefca; color: #333333; font: normal normal 12px; }
+
+$myMessageTextLabelHead
+QLabel { padding: 9px 10px; border-radius: 10px; border-top-right-radius: 0px; background-color: #ffefca; color: #333333; font: normal normal 12px; }
+
+$dateMessageLabel
+QLabel { padding-bottom: 1px; border-radius: 11px; background-color: #6e7181; color: #ffffff; font: normal normal 11px; }
+
+$createOpenChatButton
+QAbstractButton { padding-top: 15px; padding-right: 80px; padding-bottom: 13px; background-color: #ff5000;
+                  background-image: url(:/images/icon-meeting-22-nor.png); background-repeat: no-repeat; background-position: top center; background-origin: content;
+                  border: none; border-radius: 4px; color: #ffffff; font: bold normal 14px; text-align: bottom center; }
+QAbstractButton:hover { background-color: #d94400; }
+QAbstractButton:pressed { background-image: url(:/images/icon-meeting-22-press.png); background-color: #f96d2d; color: #fcc4ab; }
+
+$createOpenChatTitleTextEdit
+QTextEdit { border: none; background-color: transparent; font: bold normal 16px; color: #ffffff; }
+
+$createOpenChatTextEdit
+QTextEdit { padding: 7px; border: 1px solid #999999; background-color: #ffffff; font: normal normal 12px; color: #333333; }
+QScrollBar:vertical { width: 14px; border: none; background-color: transparent; }
+QScrollBar::handle:vertical { margin-left: 7px; background-color: rgba(0, 0, 0, 15%); border-radius: 3px; }
+QScrollBar::handle:hover { background-color: rgba(0, 0, 0, 15%); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { border: none; height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { border: none; height: 0px; }
+
+$createOpenChatLineEdit
+QLineEdit { padding: 7px; border: 1px solid #999999; background-color: #ffffff; font: normal normal 12px; color: #333333; }
+
+$openChatSelectProfileButton
+QAbstractButton { background-color: #ffffff; border: 1px solid #cccccc; border-radius: 6px; color: #333333; font: bold normal 15px; }
+QAbstractButton:hover { background-color: #f5f5f5; border-color: #c4c4c4; }
+QAbstractButton:pressed { background-color: #f5f5f5; border-color: #cccccc; color: #9f9f9f; }
+
+$openChatAnyProfileLineEdit
+QLineEdit { padding: 7px; border: 1px solid #999999; border-radius: 3px; background-color: #ffffff; font: normal normal 13px; color: #999999; }
+
+$openChatDetailButton
+QAbstractButton { padding-left: 146px; padding-top: 18px; padding-right: 140px; padding-bottom: 19px; background-color: rgba(0, 0, 0, 25%);
+                  background-image: url(%1); background-repeat: no-repeat; background-position: top right; background-origin: content;
+                  border: none; color: #ffffff; font: bold normal 15px; text-align: bottom left; }
+
+$openChatDetailButtonHalf
+QAbstractButton { padding-left: 60px; padding-top: 18px; padding-right: 56px; padding-bottom: 19px; background-color: rgba(0, 0, 0, 25%);
+                  background-image: url(%1); background-repeat: no-repeat; background-position: top right; background-origin: content;
+                  border: none; color: #ffffff; font: bold normal 15px; text-align: bottom left; }
+
+$openChatTagLabel
+QLabel { background-color: transparent; padding-left: 14px; padding-right: 14px; border: 1px solid #069fee; border-radius: 15px; color: #069fee; font: bold normal 12px; }
+
+$tabTextButton
+QAbstractButton { background:transparent; color:#999999; font: 18px; font-weight:normal;  }
+QAbstractButton:checked { background:transparent; color:rgba(255, 255, 255, 1); font-weight:bold; }
+QAbstractButton:hover:!checked { background:transparent; color:rgba(255, 255, 255, 1); font-weight:bold; }
+QAbstractButton:pressed { background:transparent; color: color:rgba(255, 255, 255, 0.4); font-weight:normal; }
+
+$settingTextImgButton
+QAbstractButton {  border:0px; padding-left:20px; image-position:left; image:url(%1); background:transparent; color:#999999; font: 18px; font-weight:normal;  }
+QAbstractButton:checked { background:transparent; color: #ffffff; font-weight:bold; }
+QAbstractButton:hover:!checked  { background:transparent; font-weight:bold; }
+QAbstractButton:pressed { background:transparent;  font-weight:normal; }
+
+
+$GeneralSetting:ComboBox
+QComboBox { font: 12px; color:#999999; border:1px solid #555555; background:#111111; border-radius:3px;	padding:0px 0px 0px 13px; background-image:url(%1);
+	background-repeat:no-repeat; background-position:right; }
+QComboBox:hover { border:1px solid #666666; color:#cccccc; background-image:url(%2); background-repeat:no-repeat; background-position:right; }
+QComboBox:on { color:#cccccc; background-image:url(%3); background-repeat:no-repeat; background-position:right; }
+QComboBox::drop-down { border:none; border-radius: 5px; padding:0px 0px 0px 10px; }
+QComboBox QAbstractItemView { background:transparent; border:1px solid #555555; outline:none; min-height:30px; }
+QComboBox QAbstractItemView::item { background:#111111; border:none; color:#878b97; padding:0px 0px 0px 10px; min-height:30px; }
+QComboBox QAbstractItemView::item:selected { background:#333333; color:#d1d4e2; }
+QToolTip { color:#666666; background:#ffffff; min-height:96px; }
+
+$launcherSetQTextEdit
+QTextEdit { background:#111111; color:#999999; padding-left:12px; padding-right:10px; padding-top:5px; padding-bottom:5px; }
+
+$launcherSettingTextButton
+QAbstractButton { background:transparent; border: 1px solid #999999; border-radius: 5px; color: #08adbc; font: normal normal 12px; }
+QAbstractButton:hover { border: 1px solid #dddddd;  color: #eeeeee; }
+QAbstractButton:pressed { border: 1px solid #444444; color: #bbbbbb; }
+QAbstractButton:disabled { background-color: #efefef; color: #aaaaaa; font: bold normal 14px; }

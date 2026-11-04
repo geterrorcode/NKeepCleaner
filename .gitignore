@@ -1,0 +1,59 @@
+# Visual Studio / Qt user and generated files
+.vs/
+**/.vs/
+**/x64/
+**/Win32/
+**/Debug/
+**/Release/
+**/realese_nonuac/
+**/obj/
+**/qmake/
+*.user
+*.suo
+*.aps
+*.ipch
+*.VC.db
+
+# Build outputs and diagnostics
+bin/
+x64/
+_codex_diagnostic_build/
+_release_build_logs/
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.obj
+*.res
+*.tlog
+*.lastbuildstate
+*.log
+*.result
+*.d
+
+# Large/local dependencies and symbols
+Depends/
+Symbol/
+
+# Credentials and signing keys
+CodeSigning/
+*.pvk
+*.pfx
+*.p12
+*.pem
+*.key
+*.snk
+
+# Local tooling state and backups
+.code-review-graph/
+*.bak
+**/*_bak/
+*_bak.*
+*_bak_*
+*.orig
+*.tmp
+*~
+*.zip
+

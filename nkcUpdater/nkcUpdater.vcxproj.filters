@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="SingleApplication">
+      <UniqueIdentifier>{c22718cf-73cc-4866-8f47-e5ec11c896e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="downloader">
+      <UniqueIdentifier>{ad63337f-8e59-45c9-acc3-b02da858f743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{9a6d0899-981f-47b9-b237-9675b2c5c6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{5e0f8c4c-38f3-4af2-8508-0088a00399a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container">
+      <UniqueIdentifier>{19f4f59e-8754-4273-8a09-20005ab23d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{a00f0b9e-afe0-445b-af65-4d0d15dab717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="define">
+      <UniqueIdentifier>{dce2ddee-b07a-4a9e-8408-b030babd7d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger">
+      <UniqueIdentifier>{7fd93abb-ddec-44e4-ba7d-a13b99a6f4c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="nkcupdater.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="nkcupdater.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="nkcupdater.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="nkcupdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleApplication\include\qtlocalpeer.cpp">
+      <Filter>SingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleApplication\include\qtsingleapplication.cpp">
+      <Filter>SingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="downloader\client.cpp">
+      <Filter>downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="downloader\downloader.cpp">
+      <Filter>downloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\downdata.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\drawshadow.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\filecopyer.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\getroundedrectregion.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\qss.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\apirequest.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\loader.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\loadsync.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\networkimagecache.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\networkmanager.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\request.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\downloadcontainer.cpp">
+      <Filter>Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\button.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\containerlayout.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\customlabel.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\hlayout.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\vlayout.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="define\ssdefins.cpp">
+      <Filter>define</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\commonlabel.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\alertpopup.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logger\Logger.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\utils.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SingleApplication\include\qtlocalpeer.h">
+      <Filter>SingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="SingleApplication\include\qtsingleapplication.h">
+      <Filter>SingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="downloader\client.h">
+      <Filter>downloader</Filter>
+    </QtMoc>
+    <QtMoc Include="downloader\downloader.h">
+      <Filter>downloader</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\downdata.h">
+      <Filter>Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Tool\filecopyer.h">
+      <Filter>Tool</Filter>
+    </QtMoc>
+    <QtMoc Include="Network\loader.h">
+      <Filter>Network</Filter>
+    </QtMoc>
+    <QtMoc Include="Network\networkimagecache.h">
+      <Filter>Network</Filter>
+    </QtMoc>
+    <QtMoc Include="Network\networkmanager.h">
+      <Filter>Network</Filter>
+    </QtMoc>
+    <QtMoc Include="Container\downloadcontainer.h">
+      <Filter>Container</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\button.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\containerlayout.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\customlabel.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\hlayout.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\vlayout.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\commonlabel.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+    <QtMoc Include="Component\alertpopup.h">
+      <Filter>Component</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tool\drawshadow.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\getroundedrectregion.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\qss.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\apirequest.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\loadsync.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\request.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="define\defineproperty.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="define\errordefine.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="define\moduledefine.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="define\ssdefins.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logger\Logger.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\utils.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nkcUpdater.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

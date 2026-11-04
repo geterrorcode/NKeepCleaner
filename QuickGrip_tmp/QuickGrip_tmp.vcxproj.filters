@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{267667ab-2f7e-4609-be3f-a72acc3130aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller">
+      <UniqueIdentifier>{b9aa2842-2926-487b-8834-cadf7c3859a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model">
+      <UniqueIdentifier>{94129178-07bc-4089-adfe-d30cdbb08def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view">
+      <UniqueIdentifier>{9f2658be-49c5-418b-8cd3-261e3aac7eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\main">
+      <UniqueIdentifier>{b75da2e0-f653-4d1b-ac62-d1e91063d948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\Component">
+      <UniqueIdentifier>{f5c9dd74-aaff-49c2-8d48-ee55a647ae47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{38d6ebf3-00c3-4f38-b1c9-9326c43c3e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\ui">
+      <UniqueIdentifier>{2298c4c2-c6f8-43ca-b964-ed864e15e1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\view_common">
+      <UniqueIdentifier>{98826fa3-b329-4f75-9aff-8617e2f367ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tool">
+      <UniqueIdentifier>{96a156d7-1885-4c83-882d-fcfe043c9f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\ux">
+      <UniqueIdentifier>{073bb88b-1c11-4959-a4d5-a9ff8b52eaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\optimize">
+      <UniqueIdentifier>{2dd0a048-c4e6-44f5-925f-6d603aa0f25b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\network">
+      <UniqueIdentifier>{aef26dec-2154-4cf9-afe8-76ec1e6e103a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\smart_optimize">
+      <UniqueIdentifier>{a9d2da7b-af0f-4764-89fa-19e89ca20eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\boostping">
+      <UniqueIdentifier>{e680bf23-4487-45c4-9035-b7d752d653a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\auto_pcoff">
+      <UniqueIdentifier>{29124f0d-26e9-4753-addd-f89ea7e654cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\startup">
+      <UniqueIdentifier>{a7fb8ecf-ff99-4517-b660-38e91892d2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\appwiz">
+      <UniqueIdentifier>{ff6920c9-5fbb-4604-b054-4c2c566db464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\option">
+      <UniqueIdentifier>{76dbfa8e-ad24-40c0-88f7-5d2fc4b40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\pcspec">
+      <UniqueIdentifier>{3da78203-5805-4ec6-a399-267d4f3e9552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\defines">
+      <UniqueIdentifier>{ae75396d-a624-4c16-997f-9d4bc667641d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\appwiz">
+      <UniqueIdentifier>{7edcf1e3-469b-4891-8332-6f84110790ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\startup">
+      <UniqueIdentifier>{4b5b3f1d-b1b3-47dd-bad1-6e406f56a108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\startup">
+      <UniqueIdentifier>{0a820dd4-4c0e-4c43-a24d-56c878fd6810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\appwiz">
+      <UniqueIdentifier>{0d26fa3a-259a-403f-aca8-ec80f8a5a8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\pcinfo">
+      <UniqueIdentifier>{1c236955-6bb8-45e7-b932-69b7e0dd4c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\boostping">
+      <UniqueIdentifier>{39996206-61af-4e27-88f3-9a1c5e1e1192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\boostping">
+      <UniqueIdentifier>{b32585f7-b973-471f-aa83-43552fd06b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\optimize">
+      <UniqueIdentifier>{f384c8b1-fd1d-453b-9d15-2bf081b57b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\optimize">
+      <UniqueIdentifier>{5b060c14-949d-4579-ba93-a4a17e3dc08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\Container">
+      <UniqueIdentifier>{7a9b4b1f-2c55-4796-8e43-967d549436c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\QSingleApplication">
+      <UniqueIdentifier>{831bb775-36c9-4e23-9506-174ff248af98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\smart_optimize">
+      <UniqueIdentifier>{a603e08c-ef83-4e52-9821-2bf2163a3f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\configdata">
+      <UniqueIdentifier>{8305acd7-8275-4d1c-8019-4c0a0e9d522b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\common">
+      <UniqueIdentifier>{1a47fdc3-cc9d-466d-b870-14608c80d964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\pcinfo">
+      <UniqueIdentifier>{66bf19be-46d8-4a92-9a25-765afe8309f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\smart_optimize">
+      <UniqueIdentifier>{eeb64e1a-80e7-465d-b2ac-c56c1d9bbeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\auto_pcoff">
+      <UniqueIdentifier>{99a9542a-d7f8-46df-bc6b-5618130dbcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\auto_pcoff">
+      <UniqueIdentifier>{486bde57-ea44-4aa8-b8d3-5acb11c24133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tool\qaes">
+      <UniqueIdentifier>{9f502d80-d5ad-49a6-a94d-88846bab25fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\tool\qaes\aesni">
+      <UniqueIdentifier>{df54727c-6087-40b6-b873-be825a5df05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\as">
+      <UniqueIdentifier>{8ee91eac-e875-42c7-9289-c09013c7cafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\common">
+      <UniqueIdentifier>{4e55dfb9-9da3-47dc-b7c4-f90be0f47c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\logger">
+      <UniqueIdentifier>{6cc1ae15-e21a-479f-8302-717e5da97041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\account">
+      <UniqueIdentifier>{eb59ba19-08be-44b3-a876-549d2f1b334c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\controller\account">
+      <UniqueIdentifier>{9ef62a7f-c9f1-48b7-9c5c-6440cecdf00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\account">
+      <UniqueIdentifier>{fa1607a3-f8ce-4d5e-914b-5f241eacee0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QuickGrip_tmp.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="QuickGrip_tmp.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="QuickGrip_tmp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="QuickGrip_tmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\main_view.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\containerlayout.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\vlayout.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ui\rcv.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ui\receiver.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\dragger.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\button.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ui\uiutils.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\hlayout.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\shadow.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\drawshadow.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\getroundedrectregion.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\optimize\optimizeview.cpp">
+      <Filter>src\view\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\smartoptimizeview.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\pconoffcontainer.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\setschedulecontainer.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\schedulecontainer.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\boostping\boostpingview.cpp">
+      <Filter>src\view\boostping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\auto_pcoff\autopcoffview.cpp">
+      <Filter>src\view\auto_pcoff</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\startup\startupview.cpp">
+      <Filter>src\view\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\appwiz\appwizview.cpp">
+      <Filter>src\view\appwiz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\option\optionview.cpp">
+      <Filter>src\view\option</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\pcspec\pcspecview.cpp">
+      <Filter>src\view\pcspec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\defines\ssdefins.cpp">
+      <Filter>src\common\defines</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\maintitlecontainer.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\appwiz\appwizmanager.cpp">
+      <Filter>src\model\appwiz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\startup\StartupSearcher.cpp">
+      <Filter>src\model\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="qapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\startup\startupcontroller.cpp">
+      <Filter>src\controller\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\utils.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\appwiz\appwizcontroller.cpp">
+      <Filter>src\controller\appwiz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\pcinfo\pcinfomanager.cpp">
+      <Filter>src\model\pcinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\pcinfo\pcinfocontroller.cpp">
+      <Filter>src\controller\pcinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\boostping\boostpingmanager.cpp">
+      <Filter>src\model\boostping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\boostping\boostpingcontroller.cpp">
+      <Filter>src\controller\boostping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\optimize\regoptimizer.cpp">
+      <Filter>src\model\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\customlabel.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\optimize\fileoptimizer.cpp">
+      <Filter>src\model\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\optimize\searchthread.cpp">
+      <Filter>src\model\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\optimize\optimizecontroller.cpp">
+      <Filter>src\controller\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\optimize\ieoptimizer.cpp">
+      <Filter>src\model\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Container\svgcontainer.cpp">
+      <Filter>src\view\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\optimize\optimizeresulwidget.cpp">
+      <Filter>src\view\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Container\topinfowidget.cpp">
+      <Filter>src\view\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\combowidget.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\auto_pcoff\settimewidget.cpp">
+      <Filter>src\view\auto_pcoff</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\tablecheckbox.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\optimize\optimizedataviewcontainer.cpp">
+      <Filter>src\view\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\mainbottomcontainer.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\serialkeyinputwidget.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\optimize\deletethread.cpp">
+      <Filter>src\model\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\optimize\optimizecompleteresultwidget.cpp">
+      <Filter>src\view\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\configdata\configdata.cpp">
+      <Filter>src\model\configdata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\common\alertpopup.cpp">
+      <Filter>src\view\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\common\makemodal.cpp">
+      <Filter>src\view\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\toast.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\smart_optimize\smartoptimizeinfo.cpp">
+      <Filter>src\model\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\smart_optimize\smartoptimizecontroller.cpp">
+      <Filter>src\controller\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\auto_pcoff\autopcoffdata.cpp">
+      <Filter>src\model\auto_pcoff</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\serialcodeedit.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\boostping\pingchecker.cpp">
+      <Filter>src\model\boostping</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\smart_optimize\pcendsesstionevent.cpp">
+      <Filter>src\controller\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\smart_optimize\combocontainer.cpp">
+      <Filter>src\view\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\smart_optimize\revervechecker.cpp">
+      <Filter>src\model\smart_optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\auto_pcoff\autopcoffchecker.cpp">
+      <Filter>src\model\auto_pcoff</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\auto_pcoff\autopcoffcontroller.cpp">
+      <Filter>src\controller\auto_pcoff</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\common\traypopup.cpp">
+      <Filter>src\view\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ui\getscreengeometry.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\ui\movetrayarea.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\traypopupcomponent.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\aescrypt.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\qaes\qaesencryption.cpp">
+      <Filter>src\common\tool\qaes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\copylabel.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\as\supportview.cpp">
+      <Filter>src\view\as</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\svcinstaller.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\optimize\optimizefilelist.cpp">
+      <Filter>src\view\optimize</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Container\backbuttonwidget.cpp">
+      <Filter>src\view\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\network\authapimanager.cpp">
+      <Filter>src\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\ProcessDetector.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\common\commoncontroller.cpp">
+      <Filter>src\controller\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QSingleApplication\singleapplication.cpp">
+      <Filter>src\QSingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QSingleApplication\singleapplication_p.cpp">
+      <Filter>src\QSingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QSingleApplication\qtlocalpeer.cpp">
+      <Filter>src\QSingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QSingleApplication\qtsingleapplication.cpp">
+      <Filter>src\QSingleApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\wndeventfilter.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\network\localserver.cpp">
+      <Filter>src\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\clickablelabel.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tool\stateeventhandler.cpp">
+      <Filter>src\common\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logger\Logger.cpp">
+      <Filter>src\common\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logger\loginstance.cpp">
+      <Filter>src\common\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\network\autochecker.cpp">
+      <Filter>src\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\defines\commondefine.cpp">
+      <Filter>src\common\defines</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\authserialkeyresetpopup.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\authexpiredkeypopup.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main\authwaitingpopup.cpp">
+      <Filter>src\view\main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\account\accountview.cpp">
+      <Filter>src\view\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller\account\accountcontroller.cpp">
+      <Filter>src\controller\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\network\webpagecaller.cpp">
+      <Filter>src\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\optimizefileshinteventhandler.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\account\mailsender.cpp">
+      <Filter>src\model\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\account\serialbackupmailview.cpp">
+      <Filter>src\view\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\customwebview.cpp">
+      <Filter>src\view\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\Component\customwebview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\view\main\main_view.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\containerlayout.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\vlayout.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\ui\receiver.h">
+      <Filter>src\common\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\dragger.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\button.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\hlayout.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\shadow.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\ux\signalobject.h">
+      <Filter>src\common\ux</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\optimize\optimizeview.h">
+      <Filter>src\view\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\smartoptimizeview.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\pconoffcontainer.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\setschedulecontainer.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\schedulecontainer.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\boostping\boostpingview.h">
+      <Filter>src\view\boostping</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\auto_pcoff\autopcoffview.h">
+      <Filter>src\view\auto_pcoff</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\startup\startupview.h">
+      <Filter>src\view\startup</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\appwiz\appwizview.h">
+      <Filter>src\view\appwiz</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\option\optionview.h">
+      <Filter>src\view\option</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\pcspec\pcspecview.h">
+      <Filter>src\view\pcspec</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\maintitlecontainer.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="qapp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\startup\startupcontroller.h">
+      <Filter>src\controller\startup</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\BaseItemModel.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\BaseListModel.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\appwiz\appwizcontroller.h">
+      <Filter>src\controller\appwiz</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\appwiz\appwizmanager.h">
+      <Filter>src\model\appwiz</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\pcinfo\pcinfomanager.h">
+      <Filter>src\model\pcinfo</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\pcinfo\pcinfocontroller.h">
+      <Filter>src\controller\pcinfo</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\boostping\boostpingmanager.h">
+      <Filter>src\model\boostping</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\boostping\boostpingcontroller.h">
+      <Filter>src\controller\boostping</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\optimize\regoptimizer.h">
+      <Filter>src\model\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\customlabel.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\optimize\fileoptimizer.h">
+      <Filter>src\model\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\optimize\searchthread.h">
+      <Filter>src\model\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\optimize\optimizecontroller.h">
+      <Filter>src\controller\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\optimize\ieoptimizer.h">
+      <Filter>src\model\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Container\svgcontainer.h">
+      <Filter>src\view\Container</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\optimize\optimizeresulwidget.h">
+      <Filter>src\view\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Container\topinfowidget.h">
+      <Filter>src\view\Container</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\combowidget.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\auto_pcoff\settimewidget.h">
+      <Filter>src\view\auto_pcoff</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\tablecheckbox.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\optimize\optimizedataviewcontainer.h">
+      <Filter>src\view\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\mainbottomcontainer.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\serialkeyinputwidget.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\optimize\deletethread.h">
+      <Filter>src\model\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\optimize\optimizecompleteresultwidget.h">
+      <Filter>src\view\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\configdata\configdata.h">
+      <Filter>src\model\configdata</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\common\alertpopup.h">
+      <Filter>src\view\common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\toast.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\smart_optimize\smartoptimizeinfo.h">
+      <Filter>src\model\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\smart_optimize\smartoptimizecontroller.h">
+      <Filter>src\controller\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\auto_pcoff\autopcoffdata.h">
+      <Filter>src\model\auto_pcoff</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\serialcodeedit.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\boostping\pingchecker.h">
+      <Filter>src\model\boostping</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\smart_optimize\combocontainer.h">
+      <Filter>src\view\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\smart_optimize\revervechecker.h">
+      <Filter>src\model\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\smart_optimize\pcendsesstionevent.h">
+      <Filter>src\controller\smart_optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\auto_pcoff\autopcoffchecker.h">
+      <Filter>src\model\auto_pcoff</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\auto_pcoff\autopcoffcontroller.h">
+      <Filter>src\controller\auto_pcoff</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\common\traypopup.h">
+      <Filter>src\view\common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\traypopupcomponent.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\aescrypt.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\qaes\qaesencryption.h">
+      <Filter>src\common\tool\qaes</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\copylabel.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\as\supportview.h">
+      <Filter>src\view\as</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\svcinstaller.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\optimize\optimizefilelist.h">
+      <Filter>src\view\optimize</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Container\backbuttonwidget.h">
+      <Filter>src\view\Container</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\network\authapimanager.h">
+      <Filter>src\common\network</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\ProcessDetector.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\common\commoncontroller.h">
+      <Filter>src\controller\common</Filter>
+    </QtMoc>
+    <QtMoc Include="src\QSingleApplication\singleapplication.h">
+      <Filter>src\QSingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="src\QSingleApplication\singleapplication_p.h">
+      <Filter>src\QSingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="src\QSingleApplication\qtlocalpeer.h">
+      <Filter>src\QSingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="src\QSingleApplication\qtsingleapplication.h">
+      <Filter>src\QSingleApplication</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\wndeventfilter.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\network\localserver.h">
+      <Filter>src\common\network</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\clickablelabel.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\shuthandler.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\tool\stateeventhandler.h">
+      <Filter>src\common\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="..\logger\loginstance.h">
+      <Filter>src\common\logger</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\network\autochecker.h">
+      <Filter>src\common\network</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\authserialkeyresetpopup.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\authexpiredkeypopup.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\main\authwaitingpopup.h">
+      <Filter>src\view\main</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\account\accountview.h">
+      <Filter>src\view\account</Filter>
+    </QtMoc>
+    <QtMoc Include="src\controller\account\accountcontroller.h">
+      <Filter>src\controller\account</Filter>
+    </QtMoc>
+    <QtMoc Include="src\common\network\webpagecaller.h">
+      <Filter>src\common\network</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\optimizefileshinteventhandler.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\account\mailsender.h">
+      <Filter>src\model\account</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\account\serialbackupmailview.h">
+      <Filter>src\view\account</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\customwebview.h">
+      <Filter>src\view\Component</Filter>
+    </QtMoc>
+    <QtMoc Include="src\view\Component\customwebview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\ui\rcv.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\qvalue.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ui\uiutils.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\drawshadow.h">
+      <Filter>src\common\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\getroundedrectregion.h">
+      <Filter>src\common\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ux\singleton.h">
+      <Filter>src\common\ux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ux\waitforsignal.h">
+      <Filter>src\common\ux</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\defines\defineproperty.h">
+      <Filter>src\common\defines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\defines\ssdefins.h">
+      <Filter>src\common\defines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\defines\commondefine.h">
+      <Filter>src\common\defines</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model\appwiz\appwizdata.h">
+      <Filter>src\model\appwiz</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model\startup\StartupSearcher.h">
+      <Filter>src\model\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model\startup\startupdata.h">
+      <Filter>src\model\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view\Component\QtListView.h">
+      <Filter>src\view\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view\Component\QtListViewImpl.h">
+      <Filter>src\view\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\utils.h">
+      <Filter>src\common\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model\optimize\optimizdata.h">
+      <Filter>src\model\optimize</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model\smart_optimize\smartopimizedata.h">
+      <Filter>src\model\smart_optimize</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view\common\makemodal.h">
+      <Filter>src\view\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\UACByPass.h">
+      <Filter>src\common\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ui\getscreengeometry.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\ui\movetrayarea.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-enc-cbc.h">
+      <Filter>src\common\tool\qaes\aesni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-enc-ecb.h">
+      <Filter>src\common\tool\qaes\aesni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-key-exp.h">
+      <Filter>src\common\tool\qaes\aesni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-key-init.h">
+      <Filter>src\common\tool\qaes\aesni</Filter>
+    </ClInclude>
+    <ClInclude Include="appversion.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logger\Logger.h">
+      <Filter>src\common\logger</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="src\QSingleApplication\SingleApplication">
+      <Filter>src\QSingleApplication</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="n-keepcleaner.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\view\account\serialbackupmailview.ui">
+      <Filter>src\view\account</Filter>
+    </QtUic>
+    <QtUic Include="src\view\account\serialbackupmailview.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

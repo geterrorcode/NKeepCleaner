@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="realese_nonuac|Win32">
+      <Configuration>realese_nonuac</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="realese_nonuac|x64">
+      <Configuration>realese_nonuac</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AC5638B-7BF6-4A38-82AF-C041C7EC6968}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|Win32'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets;opengl;openglwidgets;svg;webchannel;webenginecore;websockets;webview;networkauth;webenginewidgets;webenginequick</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|Win32'" Label="QtSettings">
+    <QtInstall>6.2.7_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>N-KeepCleaner</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>N-KeepCleaner</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">
+    <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>N-KeepCleanerUser</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Src;$(SolutionDir)logger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>"$(QTDIR)\bin\rcc.exe" -compress 3 -binary ".\QuickGrip_tmp.qrc" -o "$(OutDir)n-keepcleaner.rcc"</Command>
+    </PreBuildEvent>
+    <Link>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(QTDIR)\bin\rcc.exe" -compress 3 -binary ".\QuickGrip_tmp.qrc" -o "$(OutDir)n-keepcleaner.rcc"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>"$(QTDIR)\bin\rcc.exe" -compress 3 -binary ".\QuickGrip_tmp.qrc" -o "$(OutDir)n-keepcleaner.rcc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Src;$(SolutionDir)logger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <ProgramDatabaseFile>$(SolutionDir)Symbol\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(QTDIR)\bin\rcc.exe" -compress 3 -binary ".\QuickGrip_tmp.qrc" -o "$(OutDir)n-keepcleaner.rcc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Src;$(SolutionDir)logger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;_USERMODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <ProgramDatabaseFile>$(SolutionDir)Symbol\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(QTDIR)\bin\rcc.exe" -compress 3 -binary ".\QuickGrip_tmp.qrc" -o "$(OutDir)n-keepcleaner.rcc"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='realese_nonuac|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\logger\Logger.cpp" />
+    <ClCompile Include="..\logger\loginstance.cpp" />
+    <ClCompile Include="qapp.cpp" />
+    <ClCompile Include="src\common\defines\commondefine.cpp" />
+    <ClCompile Include="src\common\defines\ssdefins.cpp" />
+    <ClCompile Include="src\common\network\authapimanager.cpp" />
+    <ClCompile Include="src\common\network\autochecker.cpp" />
+    <ClCompile Include="src\common\network\localserver.cpp" />
+    <ClCompile Include="src\common\network\webpagecaller.cpp" />
+    <ClCompile Include="src\common\tool\aescrypt.cpp" />
+    <ClCompile Include="src\common\tool\drawshadow.cpp" />
+    <ClCompile Include="src\common\tool\getroundedrectregion.cpp" />
+    <ClCompile Include="src\common\tool\ProcessDetector.cpp" />
+    <ClCompile Include="src\common\tool\qaes\qaesencryption.cpp" />
+    <ClCompile Include="src\common\tool\stateeventhandler.cpp" />
+    <ClCompile Include="src\common\tool\svcinstaller.cpp" />
+    <ClCompile Include="src\common\tool\toast.cpp" />
+    <ClCompile Include="src\common\tool\utils.cpp" />
+    <ClCompile Include="src\common\tool\wndeventfilter.cpp" />
+    <ClCompile Include="src\common\ui\getscreengeometry.cpp" />
+    <ClCompile Include="src\common\ui\movetrayarea.cpp" />
+    <ClCompile Include="src\common\ui\rcv.cpp" />
+    <ClCompile Include="src\common\ui\receiver.cpp" />
+    <ClCompile Include="src\common\ui\uiutils.cpp" />
+    <ClCompile Include="src\controller\account\accountcontroller.cpp" />
+    <ClCompile Include="src\controller\appwiz\appwizcontroller.cpp" />
+    <ClCompile Include="src\controller\auto_pcoff\autopcoffcontroller.cpp" />
+    <ClCompile Include="src\controller\boostping\boostpingcontroller.cpp" />
+    <ClCompile Include="src\controller\common\commoncontroller.cpp" />
+    <ClCompile Include="src\controller\optimize\optimizecontroller.cpp" />
+    <ClCompile Include="src\controller\pcinfo\pcinfocontroller.cpp" />
+    <ClCompile Include="src\controller\smart_optimize\pcendsesstionevent.cpp" />
+    <ClCompile Include="src\controller\smart_optimize\smartoptimizecontroller.cpp" />
+    <ClCompile Include="src\controller\startup\startupcontroller.cpp" />
+    <ClCompile Include="src\model\account\mailsender.cpp" />
+    <ClCompile Include="src\model\appwiz\appwizmanager.cpp" />
+    <ClCompile Include="src\model\auto_pcoff\autopcoffchecker.cpp" />
+    <ClCompile Include="src\model\auto_pcoff\autopcoffdata.cpp" />
+    <ClCompile Include="src\model\boostping\boostpingmanager.cpp" />
+    <ClCompile Include="src\model\boostping\pingchecker.cpp" />
+    <ClCompile Include="src\model\configdata\configdata.cpp" />
+    <ClCompile Include="src\model\optimize\deletethread.cpp" />
+    <ClCompile Include="src\model\optimize\fileoptimizer.cpp" />
+    <ClCompile Include="src\model\optimize\ieoptimizer.cpp" />
+    <ClCompile Include="src\model\optimize\regoptimizer.cpp" />
+    <ClCompile Include="src\model\optimize\searchthread.cpp" />
+    <ClCompile Include="src\model\pcinfo\pcinfomanager.cpp" />
+    <ClCompile Include="src\model\smart_optimize\revervechecker.cpp" />
+    <ClCompile Include="src\model\smart_optimize\smartoptimizeinfo.cpp" />
+    <ClCompile Include="src\model\startup\StartupSearcher.cpp" />
+    <ClCompile Include="src\QSingleApplication\qtlocalpeer.cpp" />
+    <ClCompile Include="src\QSingleApplication\qtsingleapplication.cpp" />
+    <ClCompile Include="src\QSingleApplication\singleapplication.cpp" />
+    <ClCompile Include="src\QSingleApplication\singleapplication_p.cpp" />
+    <ClCompile Include="src\ui.cpp" />
+    <ClCompile Include="src\view\account\accountview.cpp" />
+    <ClCompile Include="src\view\account\serialbackupmailview.cpp" />
+    <ClCompile Include="src\view\appwiz\appwizview.cpp" />
+    <ClCompile Include="src\view\as\supportview.cpp" />
+    <ClCompile Include="src\view\auto_pcoff\autopcoffview.cpp" />
+    <ClCompile Include="src\view\auto_pcoff\settimewidget.cpp" />
+    <ClCompile Include="src\view\boostping\boostpingview.cpp" />
+    <ClCompile Include="src\view\common\alertpopup.cpp" />
+    <ClCompile Include="src\view\common\makemodal.cpp" />
+    <ClCompile Include="src\view\common\traypopup.cpp" />
+    <ClCompile Include="src\view\Component\button.cpp" />
+    <ClCompile Include="src\view\Component\clickablelabel.cpp" />
+    <ClCompile Include="src\view\Component\containerlayout.cpp" />
+    <ClCompile Include="src\view\Component\copylabel.cpp" />
+    <ClCompile Include="src\view\Component\customlabel.cpp" />
+    <ClCompile Include="src\view\Component\dragger.cpp" />
+    <ClCompile Include="src\view\Component\hlayout.cpp" />
+    <ClCompile Include="src\view\Component\optimizefileshinteventhandler.cpp" />
+    <ClCompile Include="src\view\Component\serialcodeedit.cpp" />
+    <ClCompile Include="src\view\Component\shadow.cpp" />
+    <ClCompile Include="src\view\Component\tablecheckbox.cpp" />
+    <ClCompile Include="src\view\Component\traypopupcomponent.cpp" />
+    <ClCompile Include="src\view\Component\vlayout.cpp" />
+    <ClCompile Include="src\view\Container\backbuttonwidget.cpp" />
+    <ClCompile Include="src\view\Container\svgcontainer.cpp" />
+    <ClCompile Include="src\view\Container\topinfowidget.cpp" />
+    <ClCompile Include="src\view\main\authexpiredkeypopup.cpp" />
+    <ClCompile Include="src\view\main\authserialkeyresetpopup.cpp" />
+    <ClCompile Include="src\view\main\authwaitingpopup.cpp" />
+    <ClCompile Include="src\view\main\mainbottomcontainer.cpp" />
+    <ClCompile Include="src\view\main\maintitlecontainer.cpp" />
+    <ClCompile Include="src\view\main\main_view.cpp" />
+    <ClCompile Include="src\view\main\serialkeyinputwidget.cpp" />
+    <ClCompile Include="src\view\optimize\optimizecompleteresultwidget.cpp" />
+    <ClCompile Include="src\view\optimize\optimizedataviewcontainer.cpp" />
+    <ClCompile Include="src\view\optimize\optimizefilelist.cpp" />
+    <ClCompile Include="src\view\optimize\optimizeresulwidget.cpp" />
+    <ClCompile Include="src\view\optimize\optimizeview.cpp" />
+    <ClCompile Include="src\view\option\optionview.cpp" />
+    <ClCompile Include="src\view\pcspec\pcspecview.cpp" />
+    <ClCompile Include="src\view\smart_optimize\combocontainer.cpp" />
+    <ClCompile Include="src\view\smart_optimize\combowidget.cpp" />
+    <ClCompile Include="src\view\smart_optimize\pconoffcontainer.cpp" />
+    <ClCompile Include="src\view\smart_optimize\schedulecontainer.cpp" />
+    <ClCompile Include="src\view\smart_optimize\setschedulecontainer.cpp" />
+    <ClCompile Include="src\view\smart_optimize\smartoptimizeview.cpp" />
+    <ClCompile Include="src\view\startup\startupview.cpp" />
+    <QtRcc Include="QuickGrip_tmp.qrc" />
+    <QtUic Include="QuickGrip_tmp.ui" />
+    <QtMoc Include="QuickGrip_tmp.h" />
+    <ClCompile Include="QuickGrip_tmp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="src\view\account\serialbackupmailview.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\view\main\main_view.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\view\Component\containerlayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\view\Component\vlayout.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\logger\Logger.h" />
+    <QtMoc Include="src\view\main\authwaitingpopup.h" />
+    <QtMoc Include="src\view\main\authexpiredkeypopup.h" />
+    <QtMoc Include="src\view\main\authserialkeyresetpopup.h" />
+    <QtMoc Include="..\logger\loginstance.h" />
+    <ClInclude Include="appversion.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="src\view\Container\backbuttonwidget.h" />
+    <QtMoc Include="src\view\optimize\optimizefilelist.h" />
+    <QtMoc Include="src\view\Component\traypopupcomponent.h" />
+    <QtMoc Include="src\view\smart_optimize\combocontainer.h" />
+    <QtMoc Include="src\view\Component\serialcodeedit.h" />
+    <QtMoc Include="src\common\tool\toast.h" />
+    <QtMoc Include="src\common\tool\aescrypt.h" />
+    <QtMoc Include="src\common\tool\qaes\qaesencryption.h" />
+    <QtMoc Include="src\common\network\authapimanager.h" />
+    <QtMoc Include="src\common\tool\ProcessDetector.h" />
+    <QtMoc Include="src\common\network\localserver.h" />
+    <QtMoc Include="src\common\network\autochecker.h" />
+    <QtMoc Include="src\common\network\webpagecaller.h" />
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-enc-cbc.h" />
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-enc-ecb.h" />
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-key-exp.h" />
+    <ClInclude Include="src\common\tool\qaes\aesni\aesni-key-init.h" />
+    <QtMoc Include="src\common\tool\svcinstaller.h" />
+    <QtMoc Include="src\common\tool\shuthandler.h" />
+    <QtMoc Include="src\common\tool\stateeventhandler.h" />
+    <ClInclude Include="src\common\tool\UACByPass.h" />
+    <ClInclude Include="src\common\tool\utils.h" />
+    <QtMoc Include="src\view\optimize\optimizecompleteresultwidget.h" />
+    <QtMoc Include="src\view\main\serialkeyinputwidget.h" />
+    <QtMoc Include="src\view\main\mainbottomcontainer.h" />
+    <QtMoc Include="src\view\optimize\optimizedataviewcontainer.h" />
+    <QtMoc Include="src\view\Component\tablecheckbox.h" />
+    <QtMoc Include="src\view\smart_optimize\combowidget.h" />
+    <QtMoc Include="src\view\Container\topinfowidget.h" />
+    <QtMoc Include="src\view\optimize\optimizeresulwidget.h" />
+    <QtMoc Include="src\view\Container\svgcontainer.h" />
+    <QtMoc Include="src\controller\appwiz\appwizcontroller.h" />
+    <QtMoc Include="src\model\pcinfo\pcinfomanager.h" />
+    <QtMoc Include="src\controller\pcinfo\pcinfocontroller.h" />
+    <QtMoc Include="src\model\boostping\boostpingmanager.h" />
+    <QtMoc Include="src\controller\boostping\boostpingcontroller.h" />
+    <QtMoc Include="src\model\optimize\regoptimizer.h" />
+    <QtMoc Include="src\model\optimize\fileoptimizer.h" />
+    <QtMoc Include="src\controller\optimize\optimizecontroller.h" />
+    <QtMoc Include="src\model\optimize\ieoptimizer.h" />
+    <QtMoc Include="src\model\optimize\deletethread.h" />
+    <QtMoc Include="src\model\configdata\configdata.h" />
+    <QtMoc Include="src\controller\smart_optimize\smartoptimizecontroller.h" />
+    <QtMoc Include="src\model\auto_pcoff\autopcoffdata.h" />
+    <QtMoc Include="src\model\boostping\pingchecker.h" />
+    <QtMoc Include="src\controller\smart_optimize\pcendsesstionevent.h" />
+    <QtMoc Include="src\model\auto_pcoff\autopcoffchecker.h" />
+    <QtMoc Include="src\controller\auto_pcoff\autopcoffcontroller.h" />
+    <QtMoc Include="src\common\tool\wndeventfilter.h" />
+    <ClInclude Include="src\common\ui\getscreengeometry.h" />
+    <ClInclude Include="src\common\ui\movetrayarea.h" />
+    <QtMoc Include="src\controller\common\commoncontroller.h" />
+    <QtMoc Include="src\controller\account\accountcontroller.h" />
+    <QtMoc Include="src\model\account\mailsender.h" />
+    <ClInclude Include="src\model\optimize\optimizdata.h" />
+    <QtMoc Include="src\view\Component\customlabel.h" />
+    <QtMoc Include="src\model\optimize\searchthread.h" />
+    <QtMoc Include="src\view\auto_pcoff\settimewidget.h" />
+    <QtMoc Include="src\model\smart_optimize\revervechecker.h" />
+    <ClInclude Include="src\model\smart_optimize\smartopimizedata.h" />
+    <QtMoc Include="src\view\common\alertpopup.h" />
+    <QtMoc Include="src\model\smart_optimize\smartoptimizeinfo.h" />
+    <QtMoc Include="src\view\as\supportview.h" />
+    <QtMoc Include="src\QSingleApplication\singleapplication.h" />
+    <QtMoc Include="src\QSingleApplication\singleapplication_p.h" />
+    <QtMoc Include="src\QSingleApplication\qtlocalpeer.h" />
+    <QtMoc Include="src\QSingleApplication\qtsingleapplication.h" />
+    <QtMoc Include="src\view\account\accountview.h" />
+    <QtMoc Include="src\view\account\serialbackupmailview.h" />
+    <ClInclude Include="src\view\common\makemodal.h" />
+    <QtMoc Include="src\view\common\traypopup.h" />
+    <QtMoc Include="src\view\Component\copylabel.h" />
+    <QtMoc Include="src\view\Component\clickablelabel.h" />
+    <QtMoc Include="src\view\Component\optimizefileshinteventhandler.h" />
+    <ClInclude Include="src\view\Component\QtListView.h" />
+    <ClInclude Include="src\view\Component\QtListViewImpl.h" />
+    <QtMoc Include="src\view\Component\BaseListModel.h" />
+    <QtMoc Include="src\view\Component\BaseItemModel.h" />
+    <QtMoc Include="qapp.h" />
+    <ClInclude Include="src\common\defines\commondefine.h" />
+    <ClInclude Include="src\common\defines\defineproperty.h" />
+    <ClInclude Include="src\common\defines\ssdefins.h" />
+    <ClInclude Include="src\common\qvalue.h" />
+    <ClInclude Include="src\common\tool\drawshadow.h" />
+    <ClInclude Include="src\common\tool\getroundedrectregion.h" />
+    <ClInclude Include="src\common\ui\rcv.h" />
+    <ClInclude Include="src\common\ui\uiutils.h" />
+    <QtMoc Include="src\view\main\maintitlecontainer.h" />
+    <QtMoc Include="src\view\pcspec\pcspecview.h" />
+    <QtMoc Include="src\view\option\optionview.h" />
+    <QtMoc Include="src\view\appwiz\appwizview.h" />
+    <QtMoc Include="src\view\startup\startupview.h" />
+    <QtMoc Include="src\view\auto_pcoff\autopcoffview.h" />
+    <QtMoc Include="src\view\boostping\boostpingview.h" />
+    <QtMoc Include="src\view\smart_optimize\schedulecontainer.h" />
+    <QtMoc Include="src\view\smart_optimize\setschedulecontainer.h" />
+    <QtMoc Include="src\view\smart_optimize\pconoffcontainer.h" />
+    <QtMoc Include="src\view\smart_optimize\smartoptimizeview.h" />
+    <QtMoc Include="src\view\optimize\optimizeview.h" />
+    <QtMoc Include="src\common\ux\signalobject.h" />
+    <ClInclude Include="src\common\ux\singleton.h" />
+    <ClInclude Include="src\common\ux\waitforsignal.h" />
+    <QtMoc Include="src\controller\startup\startupcontroller.h" />
+    <ClInclude Include="src\model\appwiz\appwizdata.h" />
+    <QtMoc Include="src\model\appwiz\appwizmanager.h" />
+    <ClInclude Include="src\model\startup\startupdata.h" />
+    <ClInclude Include="src\model\startup\StartupSearcher.h" />
+    <ClInclude Include="src\ui.h" />
+    <QtMoc Include="src\view\Component\shadow.h" />
+    <QtMoc Include="src\view\Component\hlayout.h" />
+    <QtMoc Include="src\view\Component\button.h" />
+    <QtMoc Include="src\view\Component\dragger.h" />
+    <QtMoc Include="src\common\ui\receiver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="src\QSingleApplication\SingleApplication" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="n-keepcleaner.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

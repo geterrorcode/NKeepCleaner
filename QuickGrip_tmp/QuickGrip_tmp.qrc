@@ -1,0 +1,180 @@
+<RCC>
+    <qresource prefix="/QuickGrip_tmp"/>
+    <qresource prefix="/font">
+        <file>font/Roboto-Regular.ttf</file>
+        <file>font/Roboto-Medium.ttf</file>
+        <file>font/Roboto-Bold.ttf</file>
+        <file>font/Roboto-Light.ttf</file>
+    </qresource>
+    <qresource prefix="/resource">
+        <file>resource/icon.ico</file>
+        <file>resource/icon.png</file>        
+    </qresource>
+    <qresource prefix="/main">
+        <file>resource/main/home.png</file>
+        <file>resource/main/home_over.png</file>
+        <file>resource/main/home_press.png</file>
+        <file>resource/main/title.png</file>
+        <file>resource/main/close.png</file>
+        <file>resource/main/close_over.png</file>
+        <file>resource/main/close_press.png</file>
+        <file>resource/main/minize.png</file>
+        <file>resource/main/minize_over.png</file>
+        <file>resource/main/minize_press.png</file>
+        <file>resource/main/mainbg.png</file>
+        <file>resource/main/mainbg_good.png</file>
+        <file>resource/main/mainbg_bad.png</file>
+        <file>resource/main/bottom_speed.png</file>
+        <file>resource/main/bottom_speed_good.png</file>
+        <file>resource/main/bottom_speed_bad.png</file>
+        <file>resource/main/bottom_space.png</file>
+        <file>resource/main/bottom_space_good.png</file>
+        <file>resource/main/bottom_space_bad.png</file>
+        <file>resource/main/bottom_reserv.png</file>
+        <file>resource/main/bottom_reserv_ok.png</file>
+        <file>resource/main/bottom_ping.png</file>
+        <file>resource/main/bottom_ping_on.png</file>
+        <file>resource/main/waiting.gif</file>
+    </qresource>
+        <qresource prefix="/menubtn">
+        <file>resource/main/menubtn/opti.png</file>
+        <file>resource/main/menubtn/opti_check.png</file>
+        <file>resource/main/menubtn/opti_click.png</file>
+        <file>resource/main/menubtn/opti_hover.png</file>
+        <file>resource/main/menubtn/smartopti.png</file>
+        <file>resource/main/menubtn/smartopti_check.png</file>
+        <file>resource/main/menubtn/smartopti_click.png</file>
+        <file>resource/main/menubtn/smartopti_hover.png</file>
+        <file>resource/main/menubtn/boostping.png</file>
+        <file>resource/main/menubtn/boostping_check.png</file>
+        <file>resource/main/menubtn/boostping_click.png</file>
+        <file>resource/main/menubtn/boostping_hover.png</file>
+        <file>resource/main/menubtn/pcoff.png</file>
+        <file>resource/main/menubtn/pcoff_check.png</file>
+        <file>resource/main/menubtn/pcoff_click.png</file>
+        <file>resource/main/menubtn/pcoff_hover.png</file>
+        <file>resource/main/menubtn/startup.png</file>
+        <file>resource/main/menubtn/startup_check.png</file>
+        <file>resource/main/menubtn/startup_click.png</file>
+        <file>resource/main/menubtn/startup_hover.png</file>
+        <file>resource/main/menubtn/appwiz.png</file>
+        <file>resource/main/menubtn/appwiz_check.png</file>
+        <file>resource/main/menubtn/appwiz_click.png</file>
+        <file>resource/main/menubtn/appwiz_hover.png</file>
+        <file>resource/main/menubtn/pcspec.png</file>
+        <file>resource/main/menubtn/pcspec_check.png</file>
+        <file>resource/main/menubtn/pcspec_click.png</file>
+        <file>resource/main/menubtn/pcspec_hover.png</file>
+        <file>resource/main/menubtn/config.png</file>
+        <file>resource/main/menubtn/config_check.png</file>
+        <file>resource/main/menubtn/config_click.png</file>
+        <file>resource/main/menubtn/config_hover.png</file>
+        <file>resource/main/menubtn/as.png</file>
+        <file>resource/main/menubtn/as_check.png</file>
+        <file>resource/main/menubtn/as_click.png</file>
+        <file>resource/main/menubtn/as_hover.png</file>
+        <file>resource/main/menubtn/account.png</file>
+        <file>resource/main/menubtn/account_check.png</file>
+        <file>resource/main/menubtn/account_click.png</file>
+        <file>resource/main/menubtn/account_hover.png</file>
+    </qresource>
+    <qresource prefix="/common">
+        <file>resource/common/checkbox.png</file>
+        <file>resource/common/checkbox_over.png</file>
+        <file>resource/common/checkbox_press.png</file>
+        <file>resource/common/checkbox_check.png</file>
+        <file>resource/common/checkbox_check_over.png</file>
+        <file>resource/common/checkbox_check_press.png</file>
+        <file>resource/common/btn_ok.png</file>
+        <file>resource/common/btn_ok_over.png</file>
+        <file>resource/common/btn_ok_press.png</file>
+        <file>resource/common/btn_back.png</file>
+        <file>resource/common/linebtn_normal_small.png</file>
+        <file>resource/common/linebtn_over_small.png</file>
+        <file>resource/common/linebtn_press_small.png</file>
+    </qresource>
+    <qresource prefix="/optimize">
+        <!--<file>resource/optimize/motion.gif</file>
+        <file>resource/optimize/motion_bad.gif</file>
+        <file>resource/optimize/motion_good.gif</file>-->
+        <file>resource/optimize/balloon.png</file> 
+        <file>resource/optimize/tree_down.png</file>
+        <file>resource/optimize/tree_right.png</file>
+    </qresource>
+    <qresource prefix="/smartoptimize">
+        <file>resource/smartoptimize/pconoff_btn_normal.png</file>
+        <file>resource/smartoptimize/pconoff_btn_over.png</file>
+        <file>resource/smartoptimize/pconoff_btn_press.png</file>
+        <file>resource/smartoptimize/pconoff_btn_disable.png</file>
+        <file>resource/smartoptimize/pconoff_btn_check_press.png</file>
+        <file>resource/smartoptimize/pconoff_btn_check_hover.png</file>
+        <file>resource/smartoptimize/combo_down.png</file>
+        <file>resource/smartoptimize/combo_down_over.png</file>
+        <file>resource/smartoptimize/combo_down_press.png</file>
+        <file>resource/smartoptimize/combo_down_disable.png</file>
+    </qresource>
+    <qresource prefix="/boostping">
+        <file>resource/boostping/boostping_before.png</file>
+        <file>resource/boostping/boostping_after.png</file>
+        
+    </qresource>
+        <qresource prefix="/preview">
+        <file>resource/preview/top.png</file>
+        <file>resource/preview/menu.png</file>
+        <file>resource/preview/underarrow.png</file>
+        <file>resource/preview/optimizebtn.png</file>
+        <file>resource/preview/okbtn.png</file>
+        <file>resource/preview/cancel.png</file>
+        <file>resource/preview/refreshbtn.png</file>
+    </qresource>
+    <qresource prefix="/preopti"> 
+        <file>resource/preview/opti/boxbg.png</file>
+        <file>resource/preview/opti/optibox.png</file>
+        <file>resource/preview/opti/ie.png</file>
+        <file>resource/preview/opti/reg.png</file>
+        <file>resource/preview/opti/system.png</file>
+        <file>resource/preview/opti/optibtn.png</file>
+    </qresource>
+        <qresource prefix="/smartopti">
+        <file>resource/preview/smartopti/gbdate.png</file>
+        <file>resource/preview/smartopti/gbonoff.png</file>
+        <file>resource/preview/smartopti/gbreserv.png</file>
+        <file>resource/preview/smartopti/pcoff.png</file>
+        <file>resource/preview/smartopti/pcoff_click.png</file>
+        <file>resource/preview/smartopti/pcon.png</file>
+        <file>resource/preview/smartopti/pcon_click.png</file>
+        <file>resource/preview/smartopti/top.png</file>
+        <file>resource/preview/smartopti/datebtn.png</file>
+        <file>resource/preview/smartopti/datebtn_click.png</file>
+        <file>resource/preview/smartopti/gbcombo.png</file>
+        <file>resource/preview/smartopti/combodown.png</file>
+        <file>resource/preview/smartopti/comboup.png</file>
+        <file>resource/preview/smartopti/summary.png</file>
+    </qresource>
+    <qresource prefix="/pcoff">
+        <file>resource/preview/pcoff/gbbody.png</file>
+    </qresource>
+    <qresource prefix="/startup">
+    </qresource>
+        <qresource prefix="/appwiz">
+    </qresource>
+    <qresource prefix="/pcspec">
+        <file>resource/preview/pcspec/gbbody.png</file>
+        <file>resource/preview/pcspec/icon_cpu.png</file>
+        <file>resource/preview/pcspec/icon_dis.png</file>
+        <file>resource/preview/pcspec/icon_gpu.png</file>
+        <file>resource/preview/pcspec/icon_ip.png</file>
+        <file>resource/preview/pcspec/icon_mac.png</file>
+        <file>resource/preview/pcspec/icon_mem.png</file>
+        <file>resource/preview/pcspec/icon_os.png</file>
+    </qresource>    
+    <qresource prefix="/option">
+        <file>resource/preview/option/gbbody.png</file>
+        <file>resource/preview/option/topText.png</file>
+    </qresource>
+        <qresource prefix="/as">
+        <file>resource/as/phone.png</file>
+        <file>resource/as/email.png</file>
+    </qresource>
+    
+</RCC>
